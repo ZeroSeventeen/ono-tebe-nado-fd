@@ -1,1 +1,83 @@
-/* место для вашего кода */
+/* -- Базовые стили --*/
+
+.section-title {
+  
+}
+
+.body {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.header {
+  display: flex;
+}
+
+.menu {
+  list-style-type: none;
+  /*Здесь задать настройки шрифта и т. п., что общее для меню в хедере и футере*/
+}
+
+.header .menu {
+  list-style-type: disc;
+  /* выстроены в строку */
+}
+
+.menu li.menu__item--active {
+  list-style-type: none;
+}
+
+.contacts p {
+
+}
+
+.contacts__link {
+
+}
+
+
+.cover {
+
+}
+
+.cover__title {
+
+}
+
+.cover__title--start {
+
+}
+
+.cover__title--center {
+
+}
+
+.cover__title--end {
+
+}
+
+.description {
+  /* Здесь стиль текста */
+}
+
+.description__button {
+  
+}
+
+.lots {
+
+}
+
+.cards-list {
+
+}
+
+.cards-list__card {
+
+}
+
+.about {
+
+}
+
