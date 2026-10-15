@@ -11,34 +11,65 @@
 }
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px 50px;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 .menu {
   list-style-type: none;
-  /*Здесь задать настройки шрифта и т. п., что общее для меню в хедере и футере*/
+  display: flex;
+  text-transform: lowercase;
 }
 
 .header .menu {
-  list-style-type: disc;
-  /* выстроены в строку */
+  list-style-type: circle;
+  justify-self: start;
+  flex-direction: row;
+  gap: 31px;
+}
+
+.menu li {
+  text-decoration: underline;
+  text-underline-offset: 3.5px; 
+  text-decoration-thickness: 1px; 
+  margin-bottom: 1px;
 }
 
 .menu li.menu__item--active {
   list-style-type: none;
+  text-decoration: none;
+}
+
+.logo-link {
+  display: block;
+  height: 105px;
+  width: 136px;
+}
+
+.contacts {
+  justify-self: end;
 }
 
 .contacts p {
-
+  font-style: normal;
+  width: 240px;
+  text-wrap: wrap;
 }
 
 .contacts__link {
-
+  text-underline-offset: 3.5px; 
+  text-decoration-thickness: 1px; 
+  margin-bottom: 1px;
 }
 
 
 .cover {
-
+  margin: 0 0 180px;
+  background-image: url(../images/cover.jpg);
 }
 
 .cover__title {
@@ -66,7 +97,7 @@
 }
 
 .lots {
-
+  margin: 0 0 120px;
 }
 
 .cards-list {
@@ -78,6 +109,6 @@
 }
 
 .about {
-
+  margin: 0 24px 180px;
 }
 
