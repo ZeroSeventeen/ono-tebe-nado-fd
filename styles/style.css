@@ -22,7 +22,6 @@
 }
 
 .header__links-list {
-  list-style-type: none;
   display: flex;
   text-transform: lowercase;
   list-style-type: circle;
