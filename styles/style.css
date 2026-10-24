@@ -1,10 +1,3 @@
-/* -- Базовые стили --*/
-
-.section-title {
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
 .body {
   font-family: Raleway, sans-serif;
@@ -26,22 +19,21 @@
   text-transform: lowercase;
   list-style-type: circle;
   justify-self: start;
-  flex-direction: row;
   gap: 31px;
-}
-
-.header__links-list-item {
-  text-decoration: underline;
-  text-underline-offset: 3.5px;
-  text-decoration-thickness: 1px;
-  margin-bottom: 1px;
 }
 
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__link_active {
+.link {
+  text-decoration: underline;
+  text-underline-offset: 3.5px;
+  text-decoration-thickness: 1px;
+  margin-bottom: 1px;
+}
+
+.link_active {
   text-decoration: none;
 }
 
@@ -51,21 +43,27 @@
   width: 136px;
 }
 
-.header__contacts {
-  justify-self: end;
+.contacts {
   align-items: flex-start;
 }
 
-.header__contacts p {
+.contacts a, .contacts p {
   font-style: normal;
-  width: 240px;
   text-wrap: wrap;
+  width: 100%;
 }
 
-.header__contact-link {
-  text-underline-offset: 3.5px;
-  text-decoration-thickness: 1px;
-  margin-bottom: 1px;
+.header__contacts {
+  justify-self: end;
+}
+
+.header__contacts a {
+  display: block;
+  max-width: 240px;
+}
+
+.header__contacts p {
+  max-width: 240px;
 }
 
 .cover {
@@ -81,8 +79,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 /0.6);
@@ -135,7 +132,7 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 1.28;
   word-spacing: 18px;
 }
 
@@ -153,6 +150,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .lots__heading {
@@ -173,11 +176,11 @@
 }
 
 .card-link {
-  position: relative;
   height: 100%;
 }
 
 .card {
+  position: relative;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -270,19 +273,16 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 50px;
+  padding: 0 50px 82px;
+  font-size: 18px;
 }
 
 .footer__contacts {
-  align-items: flex-start;
   max-width: 265px;
 }
 
-.footer__contacts p {
-  font-style: normal;
-  width: 264px;
-  text-wrap: wrap;
-  font-size: 18px;
+.footer__contacts a, .footer__contacts p {
+  max-width: 264px;
   line-height: 1.4;
 }
 
@@ -292,18 +292,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 18px;
 }
 
-.footer__menu-list-item {
-  text-decoration: underline;
-  text-underline-offset: 3.5px;
-  text-decoration-thickness: 1px;
-  margin-bottom: 1px;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
+.footer .link {
+  text-underline-offset: 4px;
 }
 
 .footer__social-list {
@@ -315,7 +307,7 @@
   justify-content: end;
 }
 
-.footer__social-list-item {
-  height: 48px;
-  width: 48px;
+.footer__social-icon {
+    height: 48px;
+    width: 48px;
 }
